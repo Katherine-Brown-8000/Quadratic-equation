@@ -1,5 +1,5 @@
 # The quadratic equation
-print("Enter a, b and c to caLculate the quadratic equation")
+print("Enter a, b and c to calculate the quadratic equation")
 a = float(input('Enter a: '))
 b = float(input('Enter b: '))
 c = float(input('Enter c: '))
@@ -10,11 +10,12 @@ num_b = b*b
 num_a = 4*a*c
 dom_a = 2*a
 
-# Solve the function in the square root
-solve_1 = num_b - num_a
-
+# a can not be zero
 if a == 0:
     print("This is not a quadratic equation")
+
+# Solve the function in the square root
+solve_1 = num_b - num_a
 
 if solve_1 < 0:
     print("Output is negative")
@@ -27,7 +28,7 @@ else:
     solve_3 = neg_b + solve_2
     solve_4 = neg_b - solve_2
 
-    # Divide the positive and negative forms by the dominator
+    # Divide the positive and negative forms by the denominator
     solve_5 = solve_3/dom_a
     solve_6 = solve_4/dom_a
 
