@@ -13,8 +13,11 @@ dom_a = 2*a
 # Solve the function in the square root
 solve_1 = num_b - num_a
 
+if a == 0:
+    print("This is not a quadratic equation")
+
 if solve_1 < 0:
-    print("Non viable solution, have no input")
+    print("Output is negative")
 
 else:
     # Solve the square root
@@ -28,5 +31,5 @@ else:
     solve_5 = solve_3/dom_a
     solve_6 = solve_4/dom_a
 
-    print(f"X is {solve_5}")
-    print(f"X is {solve_6}")
+    print(f"First X is {solve_5}")
+    print(f"Second X is {solve_6}")
